@@ -8,6 +8,7 @@ Start up using Docker compose:
 docker-compose up -d
 
 The app binds locally to port 5000, you can test it by using:
+
 `curl 'http://localhost:5000/render.html?url=http://www.chromestatus.com'`
 
 Replace `http://www.chromestatus.com` with any Javascript web page that you would like to render.
@@ -15,4 +16,5 @@ Replace `http://www.chromestatus.com` with any Javascript web page that you woul
 A good use case would be to combine this with scrapy when trying to scrape Javascript web pages.
 
 Pre-built Docker image can be found here:
+
 <a href="https://hub.docker.com/r/edwardaa7/chrome-api/" target="_blank">chrome-api Docker image</a>
