@@ -14,7 +14,7 @@ def render_html():
 
     result = subprocess.run(
         [
-            'chromium-browser', '--headless', '--disable-gui', '--dump-dom',
+            'chromium-browser', '--headless', '--disable-gpu', '--dump-dom',
             '--no-sandbox', url
         ],
         stdout=subprocess.PIPE)

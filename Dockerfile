@@ -6,7 +6,9 @@ ADD api.py .
 ADD requirements.txt .
 
 RUN apk add --update --no-cache chromium && \
-    pip install -r requirements.txt
+    pip install -r requirements.txt && \
+    find / -type d -name __pycache__ -exec rm -r {} + && \
+    rm -rf /root/.cache /var/cache /usr/share/terminfo
 
 EXPOSE 5000
 
